@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>挑战超凡 激擎法兰西</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script>
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + 'px';
+        console.log(pageWidth);
+    </script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <div class="tit1 ani" swiper-animate-effect="bounceInDown"></div>
+                <div class="tit2 ani" swiper-animate-effect="bounceInLeft" swiper-animate-delay="1s"></div>
+                <div class="qrcode ani" swiper-animate-effect="lightSpeedIn" swiper-animate-delay="1.5s"></div>
+                <div class="balloon ani" swiper-animate-effect="rollIn" swiper-animate-delay="2.5s"></div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="tit1 ani" swiper-animate-effect="bounceInLeft"></div>
+                <div class="tit2 ani" swiper-animate-effect="flipInY" swiper-animate-delay="1s"></div>
+                <div class="tit3 ani" swiper-animate-effect="bounceInUp" swiper-animate-delay="1.5s"></div>
+                <div class="qrcode ani" swiper-animate-effect="lightSpeedIn" swiper-animate-delay="2.5s"></div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="bg2 ani" swiper-animate-effect="bounceInLeft"></div>
+                <div class="text ani" swiper-animate-effect="flipInY" swiper-animate-delay="1s"></div>
+                <div class="qrcode ani" swiper-animate-effect="twisterInDown" swiper-animate-delay="1.5s"></div>
+            </div>
+            <div class="swiper-slide slide4">
+                <div class="text ani" swiper-animate-effect="bounceInDown"></div>
+                <div class="qrcode ani" swiper-animate-effect="twisterInDown" swiper-animate-delay="1s"></div>
+            </div>
+            <!-- <div class="swiper-slide slide5"></div> -->
+            <div class="swiper-slide slide6">
+                <div class="flag ani" swiper-animate-effect="twisterInDown" swiper-animate-delay=".5s"></div>
+                <div class="text ani" swiper-animate-effect="bounceInDown"></div>
+                <div class="car ani" swiper-animate-effect="bounceInLeft" swiper-animate-delay="1s"></div>
+                <div class="qrcode ani" swiper-animate-effect="twisterInDown" swiper-animate-delay="1.5s"></div>
+            </div>
+            <div class="swiper-slide slide7">
+                <div class="title ani" swiper-animate-effect="bounceInDown"></div>
+                <div class="form">
+                    <div class="inptwrap">
+                        <span class="label lab-name">姓名</span>
+                        <input type="text" class="inpt" id="name">
+                    </div>
+                    <div class="inptwrap">
+                        <span class="label lab-mobile">电话</span>
+                        <input type="tel" class="inpt" id="mobile">
+                    </div>
+                    <div class="inptwrap">
+                        <span class="label lab-store">门店</span>
+                        <select name="inptSel" class="inptSel" id="prov">
+                            <option value="-1">--选择城市--</option>
+                        </select>
+                    </div>
+                    <div class="inptwrap">
+                        <span class="label">&nbsp;</span>
+                        <select name="inptSel" class="inptSel" id="code" style="display:none">
+                            <option value="-1">--选择代码--</option>
+                        </select>
+                    </div>
+                    <div class="inptwrap">
+                        <span class="label">&nbsp;</span>
+                        <select name="inptSel" class="inptSel" id="store" style="display:none">
+                            <option value="-1">--选择门店--</option>
+                        </select>
+                    </div>
+                    <button type="button" id="submit">我要报名</button>
+                </div>
+            </div>
+        </div>
+        <img src="images/arrow.png" class="arrow"> 
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="success animated fadeIn">
+        <div class="bg2 animated fadeIn"></div>
+        <div class="text animated fadeIn"></div>
+    </div>
+
+    <div class="musicWrap">
+        <audio src="images/music.mp3" autoplay="autoplay" loop="loop">您的浏览器不支持 audio标签。</audio>
+        <img class="music on" src="images/on.png" />
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+a {
+    /* 去除移动端点击标签默认出现的背景遮罩框 */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+input{
+    /* 解决IOS下表单元素圆角问题 */
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+select {
+    outline: none;
+}
+.swiper-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper .swiper-slide {
+    position: relative;
+}
+.swiper-container-vertical>.swiper-pagination {
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate3d(0,-50%,0);
+    -moz-transform: translate3d(0,-50%,0);
+    -o-transform: translate(0,-50%);
+    -ms-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+.swiper-container-vertical>.swiper-pagination 
+.swiper-pagination-bullet {
+    margin: 0.125rem 0;
+    display: block;
+}
+.swiper-pagination-bullet {
+    width: 0.15625rem;
+    height: 0.15625rem;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+/* 音乐按钮 */
+.musicWrap{
+  position: absolute;
+  top: 0.125rem;
+  right: 0.15625rem;
+  z-index: 9999;
+}
+.musicWrap > img{
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
